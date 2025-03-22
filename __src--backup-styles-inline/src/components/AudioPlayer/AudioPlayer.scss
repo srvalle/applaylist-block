@@ -1,0 +1,367 @@
+.light--app {
+  --ap-bg-color: #fff;
+  --ap-border-color: #ccc;
+  --ap-elements-bg-color: #fff;
+  --ap-color: #414141;
+  --plitem-border: 1px solid #c2c2c2;
+  --plitem-bg: #eee;
+  --plitem-bg-active: #f8f8f8;
+  --plitem-bg-hover: #f8f8f8;
+  --plitem-color: #414141;
+  --btn-border: #c2c2c2;
+  --btn-bg: #eeeeee;
+  --btn-color: #414141;
+  --btn-color-hover: #8a8a8a;
+  --btn-bg-hover: #f8f8f8;
+  --btn-bg-hover-border: #c2c2c2;
+  --progress-bg: #e0e0e0;
+  --progress-fill: #414141;
+  --volume-bar-bg: #ddd;
+  --volume-slider-bg: #414141;
+  --volume-thumb-bg: #f8f8f8;
+  --volume-thumb-border: #ccc;
+}
+
+.dark--app {
+  --ap-bg-color: #222222;
+  --ap-border-color: #111;
+  --ap-elements-bg-color: #222222;
+  --ap-color: #eee;
+  --plitem-border: 1px solid #525252;
+  --plitem-bg: #2b2b2b;
+  --plitem-bg-active: #414141;
+  --plitem-bg-hover: #414141;
+  --plitem-color: #eee;
+  --btn-border: #575757;
+  --btn-bg: #414141;
+  --btn-color: #eee;
+  --btn-color-hover: #c4c4c4;
+  --btn-bg-hover: #575757;
+  --btn-bg-hover-border: #3b3b3b;
+  --progress-bg: #414141;
+  --progress-fill: #797979;
+  --volume-bar-bg: #414141;
+  --volume-slider-bg: #797979;
+  --volume-thumb-bg: #9c9c9c;
+  --volume-thumb-border: #9b9b9b;
+}
+
+
+.custom--app {
+  --ap-bg-color: #fff;
+  --ap-basic-color: 54, 139, 14;
+  /* background-color: rgb(54, 139, 14); */
+
+  --ap-border-color: rgba(33, 113, 218, 0.5);
+  --ap-elements-bg-color: rgba(var(--ap-basic-color), 0.5);
+  --ap-color: #fff;
+  --plitem-border: 1px solid rgba(var(--ap-basic-color), 0.9);
+  --plitem-bg: rgba(var(--ap-basic-color), 0.8);
+  --plitem-bg-active: rgba(var(--ap-basic-color), 0.7);
+  --plitem-bg-hover: rgba(var(--ap-basic-color), 0.7);
+  --plitem-color: #eee;
+  --btn-border: rgba(var(--ap-basic-color), 0.9);
+  --btn-bg: rgba(var(--ap-basic-color), 0.8);
+  --btn-color: #eee;
+  --btn-color-hover: #eee;
+  --btn-bg-hover: rgba(var(--ap-basic-color), 0.6);
+  --btn-bg-hover-border: rgba(var(--ap-basic-color), 0.8);
+  --progress-bg: rgba(var(--ap-basic-color), 0.5);
+  --progress-fill: rgba(var(--ap-basic-color), 1);
+  --volume-bar-bg: rgba(var(--ap-basic-color), 0.5);
+  --volume-slider-bg: rgba(var(--ap-basic-color), 1);
+  --volume-thumb-bg: rgba(var(--ap-basic-color), 1);
+  --volume-thumb-border: rgba(var(--ap-basic-color), 0.8);
+}
+
+
+
+.blue--app {
+  --ap-bg-color: #2575d1;
+  --ap-border-color: #ccc;
+  --ap-elements-bg-color: #2575d1;
+  --ap-color: #fff;
+  --plitem-border: 1px solid #c2c2c2;
+  --plitem-bg: #eee;
+  --plitem-bg-active: #f8f8f8;
+  --plitem-bg-hover: #f8f8f8;
+  --plitem-color: #414141;
+  --btn-border: #c2c2c2;
+  --btn-bg: #eeeeee;
+  --btn-color: #2575d1;
+  --btn-color-hover: #8a8a8a;
+  --btn-bg-hover: #f8f8f8;
+  --btn-bg-hover-border: #c2c2c2;
+  --progress-bg: #e0e0e0;
+  --progress-fill: #0e4e97;
+  --volume-bar-bg: #ddd;
+  --volume-slider-bg: #0e4e97;
+  --volume-thumb-bg: #f8f8f8;
+  --volume-thumb-border: #ccc;
+}
+
+.green--app {
+  --ap-bg-color: #199993;
+  --ap-border-color: #ccc;
+  --ap-elements-bg-color: #199993;
+  --ap-color: #fff;
+  --plitem-border: 1px solid #c2c2c2;
+  --plitem-bg: #eee;
+  --plitem-bg-active: #f8f8f8;
+  --plitem-bg-hover: #f8f8f8;
+  --plitem-color: #414141;
+  --btn-border: #c2c2c2;
+  --btn-bg: #eeeeee;
+  --btn-color: #0c726d;
+  --btn-color-hover: #8a8a8a;
+  --btn-bg-hover: #f8f8f8;
+  --btn-bg-hover-border: #c2c2c2;
+  --progress-bg: #e0e0e0;
+  --progress-fill: #0c726d;
+  --volume-bar-bg: #ddd;
+  --volume-slider-bg: #0c726d;
+  --volume-thumb-bg: #f8f8f8;
+  --volume-thumb-border: #ccc;
+}
+
+.purple--app {
+  --ap-bg-color: #992a9c;
+  --ap-border-color: #ccc;
+  --ap-elements-bg-color: #992a9c;
+  --ap-color: #fff;
+  --plitem-border: 1px solid #c2c2c2;
+  --plitem-bg: #eee;
+  --plitem-bg-active: #f8f8f8;
+  --plitem-bg-hover: #f8f8f8;
+  --plitem-color: #414141;
+  --btn-border: #c2c2c2;
+  --btn-bg: #eeeeee;
+  --btn-color: #992a9c;
+  --btn-color-hover: #8a8a8a;
+  --btn-bg-hover: #f8f8f8;
+  --btn-bg-hover-border: #c2c2c2;
+  --progress-bg: #e0e0e0;
+  --progress-fill: #741477;
+  --volume-bar-bg: #ddd;
+  --volume-slider-bg: #741477;
+  --volume-thumb-bg: #f8f8f8;
+  --volume-thumb-border: #ccc;
+}
+
+.orange--app {
+  --ap-bg-color: #f2a619;
+  --ap-border-color: #ccc;
+  --ap-elements-bg-color: #f2a619;
+  --ap-color: #fff;
+  --plitem-border: 1px solid #c2c2c2;
+  --plitem-bg: #eee;
+  --plitem-bg-active: #f8f8f8;
+  --plitem-bg-hover: #f8f8f8;
+  --plitem-color: #414141;
+  --btn-border: #c2c2c2;
+  --btn-bg: #eeeeee;
+  --btn-color: #ce8a0c;
+  --btn-color-hover: #8a8a8a;
+  --btn-bg-hover: #f8f8f8;
+  --btn-bg-hover-border: #c2c2c2;
+  --progress-bg: #e0e0e0;
+  --progress-fill: #ce8a0c;
+  --volume-bar-bg: #ddd;
+  --volume-slider-bg: #ce8a0c;
+  --volume-thumb-bg: #f8f8f8;
+  --volume-thumb-border: #ccc;
+}
+
+.red--app {
+  --ap-bg-color: #df3e21;
+  --ap-border-color: #ccc;
+  --ap-elements-bg-color: #df3e21;
+  --ap-color: #fff;
+  --plitem-border: 1px solid #c2c2c2;
+  --plitem-bg: #eee;
+  --plitem-bg-active: #f8f8f8;
+  --plitem-bg-hover: #f8f8f8;
+  --plitem-color: #414141;
+  --btn-border: #c2c2c2;
+  --btn-bg: #eeeeee;
+  --btn-color: #b82e16;
+  --btn-color-hover: #8a8a8a;
+  --btn-bg-hover: #f8f8f8;
+  --btn-bg-hover-border: #c2c2c2;
+  --progress-bg: #e0e0e0;
+  --progress-fill: #b82e16;
+  --volume-bar-bg: #ddd;
+  --volume-slider-bg: #b82e16;
+  --volume-thumb-bg: #f8f8f8;
+  --volume-thumb-border: #ccc;
+}
+
+.yellow--app {
+  --ap-bg-color: #f7d127;
+  --ap-border-color: #ccc;
+  --ap-elements-bg-color: #f7d127;
+  --ap-color: #fff;
+  --plitem-border: 1px solid #c2c2c2;
+  --plitem-bg: #eee;
+  --plitem-bg-active: #f8f8f8;
+  --plitem-bg-hover: #f8f8f8;
+  --plitem-color: #414141;
+  --btn-border: #c2c2c2;
+  --btn-bg: #eeeeee;
+  --btn-color: #d6b315;
+  --btn-color-hover: #8a8a8a;
+  --btn-bg-hover: #f8f8f8;
+  --btn-bg-hover-border: #c2c2c2;
+  --progress-bg: #e0e0e0;
+  --progress-fill: #d6b315;
+  --volume-bar-bg: #ddd;
+  --volume-slider-bg: #d6b315;
+  --volume-thumb-bg: #f8f8f8;
+  --volume-thumb-border: #ccc;
+}
+
+
+.audio__player {
+  background-color: var(--ap-bg-color);
+  color: var(--ap-color);
+  border: 1px solid var(--ap-border-color);
+  box-sizing: border-box;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 0;
+  /* border-radius: 5px; */
+  border-radius: 5px 5px 0 0;
+
+  max-width: 320px;
+  margin: 20px auto;
+}
+.audio__player__elements {
+  background-color: var(--ap-elements-bg-color);
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
+}
+.audio__player__buttons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.buttons {
+  border: 1px solid var(--btn-border);
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  font-size: 12px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.buttons.isActive {
+  background-color: var(--btn-bg-hover);
+  border: 1px solid var(--btn-bg-hover-border);
+}
+.buttons:hover {
+  background-color: var(--btn-bg-hover);
+  border: 1px solid var(--btn-bg-hover-border);
+  color: var(--btn-color-hover);
+}
+.audio__player__time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.audio__player__progress {
+  width: 100%;
+  margin: 20px 0 0;
+}
+.progress {
+  background-color: var(--progress-bg);
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+}
+.progress__fill {
+  background-color: var(--progress-fill);
+  height: 100%;
+  width: 0;
+}
+.range {
+  cursor: pointer;
+  width: 100px;
+  height: 5px;
+}
+
+.audio__player__volume {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.volume__bar {
+  background-color: var(--volume-bar-bg);
+  width: 100px;
+  height: 5px;
+  border-radius: 0;
+  position: relative;
+  cursor: pointer;
+}
+.volume__slider {
+  background-color: var(--volume-slider-bg);
+  position: absolute;
+  height: 100%;
+  border-radius: 0px;
+}
+.volume__thumb {
+  background-color: var(--volume-thumb-bg);
+  border: 1px solid var(--volume-thumb-border);
+  position: absolute;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+  /* cursor: grab; */
+}
+
+.audio__player__playlist {
+  color: #414141;
+}
+.audio__player__playlist__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.audio__player__playlist__item {
+  border-top: var(--plitem-border);
+  background-color: var(--plitem-bg);
+  color: var(--plitem-color);
+  text-align: left;
+  font-size: 13px;
+  line-height: 19px;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.audio__player__playlist__item:hover {
+  background-color: var(--plitem-bg-hover);
+}
+.audio__player__playlist__item.isActive {
+  background-color: var(--plitem-bg-active);
+}
+.audio__player__playlist__item:last-child {
+  border-radius: 0 0 0px 0px;
+}
