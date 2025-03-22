@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+import React from 'react';
+import { AudioPlayer } from './components/AudioPlayer/AudioPlayer';
+//// import { ThemeProvider } from './components/ThemeContext/ThemeContext';
+
+import music1 from './audios/music1.mp3';
+import music2 from './audios/music2.mp3';
+import music3 from './audios/music3.mp3';
+
+const tracks = [music1, music2, music3];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AudioPlayer tracks={tracks} />
     </div>
   );
 }
