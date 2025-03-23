@@ -1,4 +1,4 @@
-Audio player made with React.
+Audio player made with React. Using Jsx, Javascript and Sass. 
 
 link example: https://srvalle.github.io/applaylist-block/ 
 
