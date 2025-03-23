@@ -22,6 +22,30 @@
   --volume-thumb-border: #ccc;
 }
 
+.light-custom--app {
+  --ap-bg-color: #fff;
+  --ap-border-color: #ccc;
+  --ap-elements-bg-color: #fff;
+  --ap-color: #414141;
+  --plitem-border: 1px solid #c2c2c2;
+  --plitem-bg: #fff;
+  --plitem-bg-active: #eee;
+  --plitem-bg-hover: #eee;
+  --plitem-color: #414141;
+  --btn-border: #c2c2c2;
+  /* --btn-bg: #2575d1; */
+  --btn-color: #eee;
+  --btn-color-hover: #8a8a8a;
+  --btn-bg-hover: #f8f8f8;
+  --btn-bg-hover-border: #c2c2c2;
+  --progress-bg: #e0e0e0;
+  /* --progress-fill: #2575d1; */
+  --volume-bar-bg: #ddd;
+  /* --volume-slider-bg: #2575d1; */
+  --volume-thumb-bg: #f8f8f8;
+  --volume-thumb-border: #ccc;
+}
+
 .dark--app {
   --ap-bg-color: #222222;
   --ap-border-color: #111;

@@ -3,6 +3,7 @@ import { SketchPicker } from 'react-color';
 import './ColorPalette.scss';
 
 const ColorPalette = ({ onChange }) => {
+  // console.log(onChange);
   const [displayColorPicker, setDisplayColorPicker] = useState(false);
   const [color, setColor] = useState('#555');
 
@@ -15,6 +16,7 @@ const ColorPalette = ({ onChange }) => {
   };
 
   const handleChange = (color) => {
+    // console.log(color.hex);
     setColor(color.hex);
     const { rgb } = color; // Desestruturando o objeto rgb
     //// const rgbString = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`; // Criando a string RGB

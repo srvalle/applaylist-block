@@ -9,28 +9,47 @@ import ColorPalette from '../ColorPalette/ColorPalette';
 export const AudioPlayer = ({ tracks }) => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [volume, setVolume] = useState(0.5);
+  const [volume, setVolume] = useState(0.3);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [trackChanged, setTrackChanged] = useState(false);
 
-  const themeOptions = ['light', 'dark', 'blue', 'green', 'purple', 'orange', 'red', 'yellow', 'custom'];
+  const themeOptions = ['light', 'light-custom', 'dark', 'blue', 'green', 'purple', 'orange', 'red', 'yellow', 'custom'];
   const [theme, setTheme] = useState('light--app'); // css styles
   const [bgColor, setBgColor] = useState('29, 87, 194'); // Cor de fundo
   const [textColor, setTextColor] = useState('255, 255, 255'); // Cor do texto
+  const [lightCustomColor, setLightCustomColor] = useState('37, 117, 209');
+  
 
   const handleThemeChange = (newTheme) => {
     setTheme(newTheme); // Atualiza o estado do tema
 
     // mostra as palletas de cores para custom
     const colorPaletteContainer = document.querySelector('.color__pallete_container');
+    const palleteCustom1 = document.querySelector('.pallete__custom1');
+    const palleteCustom2 = document.querySelector('.pallete__custom2');
+    const palleteLightCustom = document.querySelector('.pallete__light__custom');
 
-    if (newTheme === 'custom--app') {
+    if (newTheme === 'custom--app' || newTheme === 'light-custom--app') {
       colorPaletteContainer.style.display = 'block';
+
+      if (newTheme === 'custom--app') {
+        palleteCustom1.style.display = 'block';
+        palleteCustom2.style.display = 'block';
+        palleteLightCustom.style.display = 'none';
+      } else {
+        palleteCustom1.style.display = 'none';
+        palleteCustom2.style.display = 'none';
+        palleteLightCustom.style.display = 'block';
+      }
+
     } else {
       colorPaletteContainer.style.display = 'none';
     }
+
+    
+      
   };
 
   useEffect(() => {
@@ -55,6 +74,24 @@ export const AudioPlayer = ({ tracks }) => {
       document.head.removeChild(style);
     };
   }, [textColor]);
+
+  useEffect(() => {
+    // Criar uma nova regra CSS com !important
+    const style = document.createElement('style');
+    style.innerHTML = `
+      .light-custom--app {
+        --btn-bg: rgb(${lightCustomColor});
+        --progress-fill: rgb(${lightCustomColor});
+        --volume-slider-bg: rgb(${lightCustomColor});
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Limpar o estilo ao desmontar o componente
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, [lightCustomColor]);
 
   useEffect(() => {
     if (audioRef.current) {
@@ -163,15 +200,20 @@ export const AudioPlayer = ({ tracks }) => {
           </select>
 
           <div className='color__pallete_container'>
-            <div className='pallete'>
+            <div className='pallete__custom1'>
               <ColorPalette color={bgColor} onChange={setBgColor} />
               <span className='text__custom_color'>custom basic color</span>
             </div>
             
-            <div className='pallete'>
+            <div className='pallete__custom2'>
               <ColorPalette color={textColor} onChange={setTextColor} />
               <span className='text__custom_color'>custom text color</span>
             </div>
+
+            <div className='pallete__light__custom'>
+              <ColorPalette color={lightCustomColor} onChange={setLightCustomColor} />
+              <span className='text__custom_color'>light custom color</span>
+            </div> 
           </div>
         </div>
         <div className="coluna-2">
